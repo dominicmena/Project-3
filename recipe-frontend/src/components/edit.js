@@ -4,7 +4,7 @@ const Edit = (props) =>{
 
     
  return(
-    <button>Button</button>
+    <button>Edit</button>
  )
 }
 
