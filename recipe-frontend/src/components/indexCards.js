@@ -7,13 +7,15 @@ import Edit from './edit'
 const IndexComponent = (props) =>{
 
  return(
-    <>
+    <section className="cards">
+
+    <ul className="card-container">
     {props.allRecipe.map((recipe)=>{
         return(
             <>
-            <img src={recipe.picture}/>
-            <h1>Title: {recipe.title}</h1>
-            <h1 >Recipe: {recipe.recipe}</h1>
+            <img src={recipe.picture} className="images"/>
+            <h1 clasName="cardTitle">Title: {recipe.title} </h1>
+            <h1 className="cardRecipe">Recipe: {recipe.recipe}</h1>
 
             <DeleteButton delete={props.setAllRecipe}  currentRecipe={recipe} update={props.update} setUpdate={props.setUpdate} updateApp={props.updateApp}/>
             
@@ -21,7 +23,8 @@ const IndexComponent = (props) =>{
             </>
         )
     })}
-    </>
+    </ul>
+    </section>
  )
 }
 
