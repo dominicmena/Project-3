@@ -14,7 +14,7 @@ const IndexComponent = (props) =>{
             <h1 className={recipe._id}>Title: {recipe.title}</h1>
             <h1>Recipe: {recipe.recipe}</h1>
 
-            <DeleteButton   currentRecipe={recipe} update={props.update} setUpdate={props.setUpdate} updateApp={props.updateApp}/>
+            <DeleteButton delete={props.setAllRecipe}  currentRecipe={recipe} update={props.update} setUpdate={props.setUpdate} updateApp={props.updateApp}/>
             
             <Edit currentRecipe={recipe} update={props.update} setUpdate={props.setUpdate} updateApp={props.updateApp}/>
             </>
