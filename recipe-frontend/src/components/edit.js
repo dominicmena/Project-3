@@ -23,13 +23,13 @@ const Edit = (props) => {
 
   return (
    <details>
-      <summary>Edit Recipe:</summary>
-    <section className="recipeForm">
+      <summary className="editDropDwn">Edit Recipe:</summary>
+    <section className="editForm">
       
       <form name="editForm">
         <label htmlFor="image">Image:</label>
         <input
-          className="image"
+          className="editImage"
           type="text"
           name="picture"
           onChange={handleChange}
@@ -39,20 +39,22 @@ const Edit = (props) => {
         <br />
         <label htmlFor="title">Title:</label>
         <input
-          className="recipeTitle"
+          className="editTitle"
           type="text"
           name="title"
           onChange={handleChange}
           value={recipe.title}
         />
         <br />
+        <label htmlFor="recipe">Recipe:</label>
         <input
-          className="recipe"
+          className="editRecipe"
           type="text"
           name="recipe"
           onChange={handleChange}
           value={recipe.recipe}
         />
+        <br />
         <button className="editRecipeBtn" onClick={handleSubmit}>
           Edit
         </button>
