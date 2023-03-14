@@ -12,7 +12,7 @@ const Delete = (props) =>{
     }
 
  return(
-   <li className="deleteBtn"><button onClick={ (e)=>{ handleDelete(props.currentRecipe) } }>Delete</button></li>
+   <li ><button className="deleteBtn" onClick={ (e)=>{ handleDelete(props.currentRecipe) } }>Delete</button></li>
  )
 }
 
