@@ -2,7 +2,6 @@ import {useState} from 'react'
 import axios from 'axios'
 
 const Delete = (props) =>{
-console.log(props.currentRecipe._id)
    const handleDelete = () => {
       axios.delete(`http://localhost:3000/recipes/${props.currentRecipe._id}`)
       .then(() => {
