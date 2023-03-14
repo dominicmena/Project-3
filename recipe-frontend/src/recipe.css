@@ -1,4 +1,4 @@
-#root {
+body {
   background-image: url('https://i.imgur.com/CJ3HDxE.jpg');
   background-image: fixed 100% 100%;
   background-repeat: no-repeat;
@@ -38,4 +38,9 @@
   padding: 20px;
   text-align: center;
   font-size: 15px;
+}
+
+.cardImages {
+  width: 50%;
+  height: auto;
 }
