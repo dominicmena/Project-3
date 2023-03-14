@@ -46,6 +46,13 @@ const Edit = (props) => {
           value={recipe.title}
         />
         <br />
+        <input
+          className="recipe"
+          type="text"
+          name="recipe"
+          onChange={handleChange}
+          value={recipe.recipe}
+        />
         <button className="editRecipeBtn" onClick={handleSubmit}>
           Edit
         </button>
