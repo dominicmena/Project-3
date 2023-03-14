@@ -7,8 +7,8 @@ const Edit = (props) => {
   const handleEdit = (recipe) => {
     axios
       .put("http://localhost:3000/recipes/" + recipe._id, recipe)
-      .then((response) => {
-        props.recipe(response.data)
+      axios.get('http://localhost:3000/recipes').then((res) => {
+        props.setAllRecipe(res.data)
       });
   };
 
