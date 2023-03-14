@@ -38,7 +38,7 @@ function App() {
         allRecipe.map((recipe)=>{
           return(
             <>
-            <IndexComponent currentRecipe={recipe} recipe={allRecipe} update={update} setUpdate={setUpdate} updateApp={updateApp}/>
+            <IndexComponent currentRecipe={recipe} setAllRecipe={setAllRecipe} recipe={allRecipe} update={update} setUpdate={setUpdate} updateApp={updateApp}/>
             </>
             )
           })
