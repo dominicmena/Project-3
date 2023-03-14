@@ -11,8 +11,9 @@ const IndexComponent = (props) =>{
     {props.allRecipe.map((recipe)=>{
         return(
             <>
-            <h1 className={recipe._id}>Title: {recipe.title}</h1>
-            <h1>Recipe: {recipe.recipe}</h1>
+            <img src={recipe.image} />
+            <h1>Title: {recipe.title}</h1>
+            <h1 >Recipe: {recipe.recipe}</h1>
 
             <DeleteButton delete={props.setAllRecipe}  currentRecipe={recipe} update={props.update} setUpdate={props.setUpdate} updateApp={props.updateApp}/>
             
