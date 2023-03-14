@@ -27,22 +27,17 @@ function App() {
     callApi()
   },[update])
 
-
   return (
     <>
       <h1 className="pageTitle">
         Phat to the Max Recipes
       </h1>
       <AddRecipeComponent  update={update} setUpdate={setUpdate} updateApp={updateApp}/>
-      {
-        allRecipe.map((recipe)=>{
-          return(
-            <>
-            <IndexComponent currentRecipe={recipe} recipe={allRecipe} update={update} setUpdate={setUpdate} updateApp={updateApp}/>
-            </>
-            )
-          })
-        }
+      
+      <IndexComponent  setAllRecipe={setAllRecipe} allRecipe={allRecipe} update={update} setUpdate={setUpdate} updateApp={updateApp}/>
+            
+          
+        
       
     </>
   );

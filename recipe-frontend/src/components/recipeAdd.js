@@ -57,5 +57,4 @@ function AddRecipe({ update, setUpdate }) {
   );
 }
 
-export default AddRecipe;
-
+export default Add
